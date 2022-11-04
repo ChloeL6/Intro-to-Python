@@ -18,6 +18,15 @@ A set of functions
 
 ## Setup/Installation Requirements
 
+* Open the terminal and navigate to where you want to save the project
+* $git clone https://github.com/ChloeL6/Intro-to-Python.git, to save a copy of the project
+* Do all the steps below to make and activate virtual environment, install requirements, open the repo in VS code
+    * python3.7 -m venv venv
+    * source venv/bin/activate
+    * pip install -r requirements.txt
+    * code .
+* After VS Code open, go to main.py file and click run code to on top of each functions
+
 
 ## Known Bugs
 

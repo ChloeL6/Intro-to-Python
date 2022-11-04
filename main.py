@@ -28,7 +28,6 @@ def dict_sayer(dict_test):
     else:
         print("Dictionary is empty")
         result = False
-
     return result
 
 dict_sayer(empty_dict)
@@ -44,7 +43,6 @@ def greatest(more_dict) :
         if v > greatest_value:
             greatest_value = v
             same_key = k
-            
     return (greatest_value, same_key)
 
 greatest(more_dict)
@@ -73,4 +71,5 @@ def zipper(list1, list2):
         emp_list.append(len(list2))
         result = tuple(emp_list)               
     return result
+    
 zipper(test_1, test_3)
