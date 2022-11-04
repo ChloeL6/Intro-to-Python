@@ -1,7 +1,8 @@
 
-#%%
+# %%
 list_test = ["there", "is", "a", "bird"]
-empty_list= []
+empty_list = []
+
 
 def list_sayer(list):
     if len(list) != 0:
@@ -13,12 +14,14 @@ def list_sayer(list):
         result = False
     return result
 
+
 list_sayer(list_test)
 
 
 # %%
-dict_test = { "hi": 2, "tea": 3, "cloud": 4}
+dict_test = {"hi": 2, "tea": 3, "cloud": 4}
 empty_dict = {}
+
 
 def dict_sayer(dict_test):
     if len(dict_test) != 0:
@@ -30,32 +33,37 @@ def dict_sayer(dict_test):
         result = False
     return result
 
+
 dict_sayer(empty_dict)
 
 
-#%%
-more_dict = {tuple(["salt", "pepper"]): 9, tuple(["pepper", "chili"]): 99, tuple(["oil", "peanut"]): 999 }
+# %%
+more_dict = {tuple(["salt", "pepper"]): 9, tuple(
+    ["pepper", "chili"]): 99, tuple(["oil", "peanut"]): 999}
 
-def greatest(more_dict) :
+
+def greatest(more_dict):
     greatest_value = float('-inf')
     same_key = ""
-    for k,v in more_dict.items():
+    for k, v in more_dict.items():
         if v > greatest_value:
             greatest_value = v
             same_key = k
     return (greatest_value, same_key)
 
+
 greatest(more_dict)
 
 
-#%%
+# %%
 test_1 = ["this", "is", "list", "one"]
-test_2 = ["list", "two", "equal", "two"] 
+test_2 = ["list", "two", "equal", "two"]
 test_3 = ["here", "is", "list", "three", "but", "longer"]
 
 result = {}
 new_dict = {}
 emp_list = []
+
 
 def zipper(list1, list2):
     if len(list1) == len(list2):
@@ -66,8 +74,9 @@ def zipper(list1, list2):
                 break
         result = new_dict
     elif len(list1) != len(list2):
-      result = tuple(empty_list + [list1, len(list1), list2, len(list2)])               
+        result = tuple(emp_list + [list1, len(list1), list2, len(list2)])
     return result
-    
+
+
 zipper(test_1, test_3)
 # %%
