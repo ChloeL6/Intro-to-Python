@@ -1,4 +1,4 @@
-# Intro to Python
+# Introduction to Python
 
 #### By Chloe (Yen Chi) Le
 
@@ -18,11 +18,6 @@ A set of functions
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
 
 ## Known Bugs
 
