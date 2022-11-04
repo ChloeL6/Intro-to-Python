@@ -36,9 +36,9 @@ dict_sayer(empty_dict)
 #%%
 more_dict = {tuple(["salt", "pepper"]): 9, tuple(["pepper", "chili"]): 99, tuple(["oil", "peanut"]): 999 }
 
-greatest_value = float('-inf')
-same_key = ""
 def greatest(more_dict) :
+    greatest_value = float('-inf')
+    same_key = ""
     for k,v in more_dict.items():
         if v > greatest_value:
             greatest_value = v
@@ -56,6 +56,7 @@ test_3 = ["here", "is", "list", "three", "but", "longer"]
 result = {}
 new_dict = {}
 emp_list = []
+
 def zipper(list1, list2):
     if len(list1) == len(list2):
         for item1 in list1:
@@ -65,11 +66,8 @@ def zipper(list1, list2):
                 break
         result = new_dict
     elif len(list1) != len(list2):
-        emp_list.append(list1)
-        emp_list.append(len(list1))
-        emp_list.append(list2)
-        emp_list.append(len(list2))
-        result = tuple(emp_list)               
+      result = tuple(empty_list + [list1, len(list1), list2, len(list2)])               
     return result
     
 zipper(test_1, test_3)
+# %%

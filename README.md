@@ -7,10 +7,9 @@
 ## Technologies Used
 
 * Python
-* Jupyter
+* Jupyter NoteBook
 * Github
-* WSL
-* 
+* VS Code 
 
 ## Description
 
@@ -25,7 +24,7 @@ A set of functions
     * source venv/bin/activate
     * pip install -r requirements.txt
     * code .
-* After VS Code open, go to main.py file and click run code to on top of each functions
+* After VS Code open, go to main.py file and click run cell on top of each functions
 
 
 ## Known Bugs
